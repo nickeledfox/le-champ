@@ -52,8 +52,5 @@
       "config": "./tailwind.config.js",
       "presets": "emotion"
     }
-  },
-  "devDependencies": {
-    "babel-plugin-twin": "^1.0.2"
   }
 }
