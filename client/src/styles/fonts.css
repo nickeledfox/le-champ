@@ -1,0 +1,77 @@
+/*************************** Google Sans ***********************/
+@font-face {
+  font-family: 'Google Sans';
+  src: url('../assets/fonts/GoogleSans/ProductSans-Black.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'Google Sans';
+  src: url('../assets/fonts/GoogleSans/ProductSans-BlackItalic.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'Google Sans';
+  src: url('../assets/fonts/GoogleSans/ProductSans-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Google Sans';
+  src: url('../assets/fonts/GoogleSans/ProductSans-BoldItalic.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'Google Sans';
+  src: url('../assets/fonts/GoogleSans/ProductSans-Italic.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'Google Sans';
+  src: url('../assets/fonts/GoogleSans/ProductSans-Light.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'Google Sans';
+  src: url('../assets/fonts/GoogleSans/ProductSans-LightItalic.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'Google Sans';
+  src: url('../assets/fonts/GoogleSans/ProductSans-Medium.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'Google Sans';
+  src: url('../assets/fonts/GoogleSans/ProductSans-MediumItalic.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'Google Sans';
+  src: url('../assets/fonts/GoogleSans/ProductSans-Regular.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'Google Sans';
+  src: url('../assets/fonts/GoogleSans/ProductSans-Thin.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Google Sans';
+  src: url('../assets/fonts/GoogleSans/ProductSans-ThinItalic.ttf')
+    format('truetype');
+}
+
+/**************************** Diavolo ***************************/
+@font-face {
+  font-family: 'Diavolo';
+  src: url('../assets/fonts/Diavlo/BLACK.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Diavolo';
+  src: url('../assets/fonts/Diavlo/BOLD.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Diavolo';
+  src: url('../assets/fonts/Diavlo/BOOK.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Diavolo';
+  src: url('../assets/fonts/Diavlo/LIGHT.woff2') format('woff2');
+}

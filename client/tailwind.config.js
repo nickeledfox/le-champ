@@ -4,14 +4,15 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        base: 'Google Sans',
         diavolo: 'Diavlo',
       },
       colors: {
-        accent: '#E7A925',
-        ligth: '#D9D1D1',
-        gray: '#6A6A6A',
-        blue: '#3F57B2',
-        brown: '#613F1B',
+        accent: 'var(--accent)',
+        ligth: 'var(--ligth)',
+        gray: 'var(--gray)',
+        blue: 'var(--blue)',
+        brown: 'var(--brown)',
       },
       zIndex: {
         '-1': -1,

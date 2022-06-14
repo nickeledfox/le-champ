@@ -6,7 +6,18 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import './fonts.css';
+
+:root {
+  --accent: #e7a925;
+  --bg: #f5e1b2;
+  --bg2: #ead2a0;
+  --ligth: #d9d1d1;
+  --gray: #6a6a6a;
+  --blue: #3f57b2;
+  --brown: #613f1b;
+
+  --c-font: #000;
+  --black1: #171717;
+  --black2: #291b0b;
 }
