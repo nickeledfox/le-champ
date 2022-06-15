@@ -25,6 +25,7 @@ const customStyles = css(defaults, {
   body: {
     fontFamily: theme`fontFamily.base`,
     fontSize: '2rem',
+    fontWeight: 400,
     ...tw`antialiased`,
 
     backgroundColor: 'var(--bg)',
@@ -35,11 +36,14 @@ const customStyles = css(defaults, {
   },
 });
 
-const GlobalStyles = () => (
+export const GlobalStyles = () => (
   <>
     <BaseStyles />
     <Global styles={customStyles} />
   </>
 );
 
-export default GlobalStyles;
+export const Container = tw.div`
+container 
+mx-auto
+`;
