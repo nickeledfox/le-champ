@@ -2,7 +2,6 @@
 @import 'normalize.css';
 
 /* Tailwind */
-@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -20,4 +19,6 @@
   --c-font: #000;
   --black1: #171717;
   --black2: #291b0b;
+
+  --border-radius: 10px;
 }

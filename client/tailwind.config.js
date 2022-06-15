@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        base: 'Google Sans',
+        base: ['Google Sans, Helvetica, sans-serif'],
         diavolo: 'Diavlo',
       },
       colors: {
@@ -18,6 +18,7 @@ module.exports = {
         '-1': -1,
       },
       container: {
+        center: true,
         padding: '1rem',
       },
     },
