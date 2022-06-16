@@ -6,6 +6,7 @@ const CoppyrightContainer = tw.div`
 w-full
 bg-[var(--black2)]
 flex items-center justify-center
+relative
 
 [> a]:(pt-5 pb-7)
 `;
@@ -13,6 +14,9 @@ flex items-center justify-center
 const Text = tw.span`
 text-white
 text-2xl
+ml-32
+
+
 `;
 
 const ImageContainer = styled.div`
@@ -26,7 +30,7 @@ const ImageContainer = styled.div`
     sm:block
     w-auto
     h-full
-    pr-32
+    ml-32
 `};
 `;
 

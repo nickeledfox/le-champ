@@ -4,13 +4,32 @@ import LogoWhite from '../assets/images/logos/logo-white.png';
 import AerisHill from '../assets/images/logos/logo1.png';
 import CopyrightImg from '../assets/images/logos/logo2.png';
 
+// Icons
+import LocanionIcon from '../assets/images/icons/location.svg';
+import MailIcon from '../assets/images/icons/mail.svg';
+import PhoneIcon from '../assets/images/icons/phone.svg';
+import FlagEngland from '../assets/images/icons/flag_e.svg';
+import FlagVietnam from '../assets/images/icons/flag_v.svg';
+import FacebookIcon from '../assets/images/icons/facebook.svg';
+import InstagramIcon from '../assets/images/icons/instagram.svg';
+
 // Common
 import LeChamp from '../assets/images/common/img2.png';
 import Img3 from '../assets/images/common/img3.png';
 import Img4 from '../assets/images/common/img4.png';
 import Messenger from '../assets/images/common/messenger.png';
 
+// Background
+import FooterBackgroundImage from '../assets/images/background/footer.svg';
+
 export {
+  MailIcon,
+  LocanionIcon,
+  FacebookIcon,
+  InstagramIcon,
+  PhoneIcon,
+  FlagEngland,
+  FlagVietnam,
   CopyrightImg,
   AerisHill,
   Logo,
@@ -19,4 +38,5 @@ export {
   Img3,
   Img4,
   Messenger,
+  FooterBackgroundImage,
 };

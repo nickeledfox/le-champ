@@ -47,3 +47,7 @@ export const Container = tw.div`
 container 
 mx-auto
 `;
+
+export const FlexCenter = tw.div`
+flex justify-center
+`;
