@@ -16,6 +16,12 @@
   --blue: #3f57b2;
   --brown: #613f1b;
 
+  --gradient: linear-gradient(
+    90.07deg,
+    var(--accent) 0.04%,
+    var(--blue) 98.89%
+  );
+
   --c-font: #000;
   --black1: #171717;
   --black2: #291b0b;

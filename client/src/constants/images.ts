@@ -20,7 +20,9 @@ import Img4 from '../assets/images/common/img4.png';
 import Messenger from '../assets/images/common/messenger.png';
 
 // Background
-import FooterBackgroundImage from '../assets/images/background/footer.svg';
+import BackgroundImage from '../assets/images/background/background.svg';
+import Bg1 from '../assets/images/background/bg-no-color 1.png';
+import LT_BG from '../assets/images/background/group.png';
 
 export {
   MailIcon,
@@ -38,5 +40,7 @@ export {
   Img3,
   Img4,
   Messenger,
-  FooterBackgroundImage,
+  BackgroundImage,
+  Bg1,
+  LT_BG,
 };

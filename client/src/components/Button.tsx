@@ -6,7 +6,7 @@ interface ButtonProps {
 
 export const Button = styled.button(({ variant }: ButtonProps) => [
   tw`
-  transition  font-medium py-[11px] px-[32px]
+  transition font-medium py-[11px] px-[32px]
   `,
   css`
     box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
@@ -27,15 +27,19 @@ export const Button = styled.button(({ variant }: ButtonProps) => [
 
   variant === 'white' && [
     css`
-      border-radius: 10px;
+      border-radius: var(--border-radius);
+      box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
       font-size: 20px;
       line-height: 25px;
     `,
     tw`
+    w-[146.03px] h-[50px]
     text-brown
     bg-white 
     border-white
-    hover:bg-yellow-50 hover:text-black`,
+    hover:opacity-[.85] hover:text-black
+    active:opacity-[.75]
+    `,
   ],
 
   variant === 'disabled' && [

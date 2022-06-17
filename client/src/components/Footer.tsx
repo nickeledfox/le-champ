@@ -5,7 +5,7 @@ import { Coppyright } from './Coppyright';
 import { H } from './Heading';
 import Phone from './Phone';
 import {
-  FooterBackgroundImage as BackgroundImage,
+  BackgroundImage,
   FacebookIcon,
   InstagramIcon,
   LogoWhite,
@@ -13,6 +13,8 @@ import {
 import { FlexCenter } from '../styles/GlobalStyles';
 
 const FooterWrapper = styled.footer`
+  margin-top: 100vh;
+
   background: url(${BackgroundImage});
   background-position: center center;
   background-repeat: no-repeat;
