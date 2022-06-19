@@ -12,6 +12,51 @@ import {
 } from '../constants/images';
 import { FlexCenter } from '../styles/GlobalStyles';
 
+export const Footer = () => {
+  return (
+    <FooterWrapper>
+      <FlexCenter>
+        <img src={LogoWhite} alt='' className='z-10' />
+      </FlexCenter>
+      <FooterContainer>
+        <Col>
+          <Topic level={4}>VỀ LE CHAMP</Topic>
+          <Link to='/'>Khu Nghỉ Dưỡng</Link>
+          <Link to='/'>Ẩm Thực</Link>
+          <Link to='/'>Khoáng Nóng</Link>
+          <Link to='/'>Tin Tức</Link>
+        </Col>
+        <Col className='lg:pl-[60px]'>
+          <Topic level={4}>LIÊN HỆ</Topic>
+          <Link className='pb-9' to='/'>
+            Bản nước nóng, tú lệ, văn chấn, yên bái, việt nam
+          </Link>
+          <Topic level={4}>ĐẶT PHÒNG</Topic>
+          <div className='mt-[-20px]'>
+            <Phone />
+          </div>
+        </Col>
+        <Col>
+          <Topic level={4}>THÔNG TIN KHÁC</Topic>
+          <Link to='/'>Thư viện ảnh</Link>
+          <Link to='/'>Câu hỏi thường gặp</Link>
+          <Link to='/'>Chính sách thanh toán</Link>
+          <Link to='/'>Điều khoản dịch vụ</Link>
+        </Col>
+      </FooterContainer>
+      <FlexCenter className='pl-7'>
+        <IconLink to={'https://www.facebook.com'}>
+          <img src={FacebookIcon} alt='facebook' />
+        </IconLink>
+        <IconLink to={'https://www.instagram.com'}>
+          <img src={InstagramIcon} alt='instagram' className='ml-[9.2px]' />
+        </IconLink>
+      </FlexCenter>
+      <Coppyright />
+    </FooterWrapper>
+  );
+};
+
 const FooterWrapper = styled.footer`
   margin-top: 100vh;
 
@@ -72,48 +117,3 @@ const IconLink = tw(Link)`
 
      [> img]:(w-[ 24.2px] h-[24px])
 `;
-
-export const Footer = () => {
-  return (
-    <FooterWrapper>
-      <FlexCenter>
-        <img src={LogoWhite} alt='' className='z-10' />
-      </FlexCenter>
-      <FooterContainer>
-        <Col>
-          <Topic level={4}>VỀ LE CHAMP</Topic>
-          <Link to='/'>Khu Nghỉ Dưỡng</Link>
-          <Link to='/'>Ẩm Thực</Link>
-          <Link to='/'>Khoáng Nóng</Link>
-          <Link to='/'>Tin Tức</Link>
-        </Col>
-        <Col className='lg:pl-[60px]'>
-          <Topic level={4}>LIÊN HỆ</Topic>
-          <Link className='pb-9' to='/'>
-            bản nước nóng, tú lệ, văn chấn, yên bái, việt nam
-          </Link>
-          <Topic level={4}>ĐẶT PHÒNG</Topic>
-          <div className='mt-[-20px]'>
-            <Phone />
-          </div>
-        </Col>
-        <Col>
-          <Topic level={4}>THÔNG TIN KHÁC</Topic>
-          <Link to='/'>Thư viện ảnh</Link>
-          <Link to='/'>Câu hỏi thường gặp</Link>
-          <Link to='/'>Chính sách thanh toán</Link>
-          <Link to='/'>Điều khoản dịch vụ</Link>
-        </Col>
-      </FooterContainer>
-      <FlexCenter>
-        <IconLink to={''}>
-          <img src={FacebookIcon} alt='' />
-        </IconLink>
-        <IconLink to={''}>
-          <img src={InstagramIcon} alt='' className='ml-[9.2px]' />
-        </IconLink>
-      </FlexCenter>
-      <Coppyright />
-    </FooterWrapper>
-  );
-};

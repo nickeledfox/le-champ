@@ -6,7 +6,7 @@ interface ButtonProps {
 
 export const Button = styled.button(({ variant }: ButtonProps) => [
   tw`
-   font-medium py-[11px] px-[32px] transition active:opacity-[.75]
+    font-medium py-[11px] px-[32px] transition active:opacity-[.75]
   `,
   css`
     box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
@@ -19,26 +19,27 @@ export const Button = styled.button(({ variant }: ButtonProps) => [
       line-height: 20px;
     `,
     tw`
-    text-white
-    bg-accent 
-    border-accent
-    hover:bg-brown`,
+      text-white
+      bg-accent 
+      border-accent
+      hover:bg-brown`,
+    ,
   ],
 
   variant === 'white' && [
     css`
       border-radius: var(--border-radius);
       box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
-      font-size: 20px;
-      line-height: 25px;
     `,
     tw`
-    w-[146.03px] h-[50px]
-    text-brown
-    bg-white 
-    border-white
-    hover:opacity-[.85] hover:text-black
-    active:opacity-[.75]
+      py-[16px] px-[33px]
+      text-[16px] sm:text-[20px]
+      leading-[20px] sm:leading-[25px]
+      text-brown
+      bg-white 
+      border-white
+      hover:opacity-[.85] hover:text-black
+      active:opacity-[.75]
     `,
   ],
 
@@ -49,9 +50,9 @@ export const Button = styled.button(({ variant }: ButtonProps) => [
       line-height: 25px;
     `,
     tw`
-    text-ligth
-    bg-white 
-    border-white
-    cursor-not-allowed`,
+      text-ligth
+      bg-white 
+      border-white
+      cursor-not-allowed`,
   ],
 ]);

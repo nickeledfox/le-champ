@@ -44,7 +44,8 @@ export const GlobalStyles = () => (
 
 export const Container = tw.div`
 mx-auto
-max-w-[1165px]
+px-[16px]
+max-w-[1197px]
 `;
 
 export const FlexCenter = tw.div`
