@@ -6,7 +6,7 @@ interface ButtonProps {
 
 export const Button = styled.button(({ variant }: ButtonProps) => [
   tw`
-  transition font-medium py-[11px] px-[32px]
+   font-medium py-[11px] px-[32px] transition active:opacity-[.75]
   `,
   css`
     box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
@@ -22,7 +22,7 @@ export const Button = styled.button(({ variant }: ButtonProps) => [
     text-white
     bg-accent 
     border-accent
-    hover:bg-brown active:bg-brown`,
+    hover:bg-brown`,
   ],
 
   variant === 'white' && [

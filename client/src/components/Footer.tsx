@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom';
 import tw, { styled } from 'twin.macro';
 
 import { Coppyright } from './Coppyright';
-import { H } from './Heading';
-import Phone from './Phone';
+import { H } from './common/Heading';
+import Phone from './common/Phone';
 import {
   BackgroundImage,
   FacebookIcon,

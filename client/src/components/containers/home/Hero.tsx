@@ -1,5 +1,5 @@
 import tw, { styled, css } from 'twin.macro';
-import { BackgroundImage } from '../constants/images';
+import { BackgroundImage } from '../../../constants/images';
 
 const HeroWrapper = styled.div`
   height: 629px;
@@ -10,8 +10,6 @@ const HeroWrapper = styled.div`
   background-size: cover;
 `;
 
-const Hero = () => {
+export const Hero = () => {
   return <HeroWrapper></HeroWrapper>;
 };
-
-export default Hero;

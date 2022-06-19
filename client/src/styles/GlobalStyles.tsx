@@ -28,7 +28,6 @@ const customStyles = css(defaults, {
     fontWeight: 400,
     ...tw`antialiased`,
 
-    backgroundColor: 'var(--bg)',
     color: 'var(--c-font)',
 
     overflowX: 'hidden',

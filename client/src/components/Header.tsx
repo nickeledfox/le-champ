@@ -5,9 +5,9 @@ import { ReactComponent as LocationIcon } from '../assets/images/icons/location.
 import { ReactComponent as MailIcon } from '../assets/images/icons/mail.svg';
 
 import { Container } from '../styles/GlobalStyles';
-import Phone from './Phone';
+import Phone from './common/Phone';
 import { Link } from 'react-router-dom';
-import { Button } from './Button';
+import { Button } from './common/Button';
 import Navbar from './Navbar';
 
 const InfoHeader = styled.header`
@@ -36,7 +36,7 @@ const LogoWrapper = styled(Link)`
   padding-bottom: 6px;
 `;
 
-const Header = () => {
+export const Header = () => {
   return (
     <InfoHeader>
       <Container>
@@ -76,5 +76,3 @@ const Header = () => {
     </InfoHeader>
   );
 };
-
-export default Header;

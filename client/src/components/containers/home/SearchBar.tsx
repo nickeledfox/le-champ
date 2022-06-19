@@ -1,6 +1,6 @@
 import tw, { styled, css } from 'twin.macro';
-import { Container } from '../styles/GlobalStyles';
-import { Button } from './Button';
+import { Container } from '../../../styles/GlobalStyles';
+import { Button } from '../../common/Button';
 
 const SearchBarComponent = styled.div`
   border-radius: var(--border-radius);
@@ -14,13 +14,14 @@ const SearchBarComponent = styled.div`
   lg:max-w-[950px]
   lg:px-[41.5px]
   lg:py-[22.5px]
+  z-10
 
   flex
   justify-between
 `};
 `;
 
-const SearchBar = () => {
+export const SearchBar = () => {
   return (
     <Container>
       <SearchBarComponent>
@@ -33,5 +34,3 @@ const SearchBar = () => {
     </Container>
   );
 };
-
-export default SearchBar;
