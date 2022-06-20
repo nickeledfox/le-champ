@@ -1,13 +1,12 @@
 import tw, { styled, css } from 'twin.macro';
 
-export interface SearchBarComponentProps {
+export interface Props {
   variant: 'vertical' | 'horizontal';
   className?: string;
 }
 
-export const SearchBarComponent = styled.div(
-  ({ variant }: SearchBarComponentProps) => [
-    tw`
+export const SearchBarComponent = styled.div(({ variant }: Props) => [
+  tw`
     bg-[rgba(231, 169, 37, 0.97)]
     relative
     z-10
@@ -15,112 +14,121 @@ export const SearchBarComponent = styled.div(
               
     [svg]:(cursor-pointer)
   `,
+  css`
+    border-radius: var(--border-radius);
+
+    .fa-plus {
+      padding: 0 15px;
+    }
+  `,
+
+  variant === 'vertical' && [
     css`
-      border-radius: var(--border-radius);
-
-      .fa-plus {
-        padding: 0 15px;
-      }
-    `,
-
-    /***************************************
-=========== Vertical Styles ============
-****************************************/
-
-    variant === 'vertical' && [
-      css`
-        .SearchItem :nth-child(2):not(svg) {
-          border-radius: var(--border-radius);
-
-          ${tw`
+      .SearchItem :nth-child(2):not(svg) {
+        border-radius: var(--border-radius);
+        ${tw`
               py-[12px] px-[14px]
-              flex items-center justify-end
               text-gray
               font-medium
               mt-[1rem]
               bg-white
           `}
-        }
+      }
 
-        svg {
-          ${tw`
+      svg {
+        ${tw`
               text-[25px]
           `}
-        }
+      }
 
-        span {
-          ${tw`
-              absolute
-              left-20
+      span {
+        ${tw`
+              flex justify-between
           `}
-        }
+      }
 
-        button {
-          margin-top: 35px;
-          width: 65%;
-        }
-      `,
+      .ButtonWrapper {
+        ${tw`
+              flex items-center justify-center
+          `}
+      }
 
-      tw`
+      button {
+        margin-top: 35px;
+        width: 65%;
+        padding: 18px;
+      }
+    `,
+
+    tw`
         flex flex-col
         justify-evenly
         gap-[20px]
         px-[35px] pt-[27px] pb-[46.5px]
         max-w-[380px]
       `,
-    ],
+  ],
 
-    /***************************************
-=========== Horizontal Styles ============
-****************************************/
+  variant === 'horizontal' && [
+    css`
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: 1.2fr 1.2fr 1fr 1fr 1.5fr;
+      grid-gap: 30px;
 
-    variant === 'horizontal' && [
-      css`
-        .SearchItem {
-          border-bottom: 1px solid #fff;
-          display: flex;
-          flex-direction: column;
-        }
+      .SearchItem {
+        border-bottom: 1px solid #fff;
+        ${tw`
+              flex flex-col justify-between
+          `}
+      }
 
-        .SearchItem :nth-child(2) {
-          color: #fff;
-          padding-top: 8px;
-        }
+      .SearchItem :nth-child(2) {
+        ${tw`
+              text-white
+          `}
+      }
 
-        div {
-          padding-bottom: 3px;
-        }
-
-        svg {
-          ${tw`
+      svg {
+        ${tw`
               text-[17px]
           `}
-        }
+      }
 
-        span {
-          ${tw`
-              pr-20
+      span {
+        ${tw`
+              flex justify-between items-center
+              pb-[5px]
           `}
-        }
-      `,
-      tw`
-        flex
-        justify-between
-        text-[14px]
+      }
+
+      .ButtonWrapper {
+        ${tw`
+              flex items-center justify-end
+          `}
+      }
+    `,
+    tw`
         font-medium
+        text-[14px]
         leading-[20px]
+
+        md:mt-[-190px]
+        md:max-w-[950px]
+        md:px-[25px]
+        md:py-[25px]
       
         lg:mt-[-40px]
-        lg:max-w-[950px]
         lg:px-[41.5px]
-        lg:py-[22.5px]
+        lg:py-[25.5px]
       `,
-    ],
-  ]
-);
+  ],
+]);
 
 export const OptionName = tw.label`
-  text-[12px] sm:text-[14px]
+  text-[12px] lg:text-[14px]
   font-bold
-  leading-[20px]
+  leading-[13px]
+  lg:leading-[20px]
+  pb-[9px]
 `;
