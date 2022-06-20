@@ -1,6 +1,6 @@
 import tw, { styled } from 'twin.macro';
 import { Bg1, LT_BG } from '../../../constants/images';
-import { SearchBar } from '../../SearchBar';
+import { SearchBar } from '../../layouts';
 
 export const Spa = () => {
   return (
@@ -9,7 +9,7 @@ export const Spa = () => {
         <img src={Bg1} className='main-background' alt='' />
         <img src={LT_BG} className='left-top-background' alt='' />
       </Backgrounds>
-      <SearchBar variant='vertical' />
+      <SearchBar variant='horizontal' />
     </div>
   );
 };

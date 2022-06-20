@@ -1,40 +1,14 @@
-import tw, { styled, css } from 'twin.macro';
-import { Logo } from '../constants/images';
-import { ReactComponent as PhoneIcon } from '../assets/images/icons/phone.svg';
-import { ReactComponent as LocationIcon } from '../assets/images/icons/location.svg';
-import { ReactComponent as MailIcon } from '../assets/images/icons/mail.svg';
+import { Logo } from '../../../constants/images';
 
-import { Container } from '../styles/GlobalStyles';
-import Phone from './common/Phone';
-import { Link } from 'react-router-dom';
-import { Button } from './common/Button';
-import Navbar from './Navbar';
+import { ReactComponent as LocationIcon } from '../../../assets/images/icons/location.svg';
+import { ReactComponent as MailIcon } from '../../../assets/images/icons/mail.svg';
+import { ReactComponent as PhoneIcon } from '../../../assets/images/icons/phone.svg';
 
-const InfoHeader = styled.header`
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 18px;
-  background-color: #fff;
-`;
-
-const InfoItems = tw.ul`
-  flex 
-  justify-between
-  items-center
-`;
-const InfoItem = tw.li`
-  flex 
-  items-center
-`;
-
-const Icon = styled.div`
-  padding-right: 12px;
-`;
-
-const LogoWrapper = styled(Link)`
-  padding-top: 12px;
-  padding-bottom: 6px;
-`;
+import { Container } from '../../../styles/GlobalStyles';
+import Phone from '../../common/Phone';
+import { Button } from '../../common/Button';
+import { Icon, InfoHeader, InfoItem, InfoItems, LogoWrapper } from './style';
+import { Navbar } from '../Navbar/Navbar';
 
 export const Header = () => {
   return (
@@ -55,7 +29,7 @@ export const Header = () => {
           </InfoItem>
           <InfoItem>
             <LogoWrapper to={'/'}>
-              <img src={Logo} alt='' />
+              <img src={Logo} alt='logo' />
             </LogoWrapper>
           </InfoItem>
           <InfoItem>

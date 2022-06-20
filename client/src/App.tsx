@@ -1,5 +1,4 @@
-import { Footer } from './components/Footer';
-import { Header } from './components/Header';
+import { Header, Footer } from './components/layouts';
 import Routes from './routes/Routes';
 
 export const App = () => {
