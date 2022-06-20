@@ -32,9 +32,9 @@ export const Button = styled.button(({ variant }: ButtonProps) => [
       box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
     `,
     tw`
-      py-[16px] px-[33px]
-      text-[16px] sm:text-[20px]
-      leading-[20px] sm:leading-[25px]
+      lg:py-[12px] 
+      text-[15px] lg:text-[20px]
+      leading-[20px] lg:leading-[25px]
       text-brown
       bg-white 
       border-white
