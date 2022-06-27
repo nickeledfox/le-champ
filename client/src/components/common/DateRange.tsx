@@ -5,26 +5,13 @@ import 'react-date-range/dist/theme/default.css'; // theme css file
 
 import tw, { styled, css } from 'twin.macro';
 
-export interface Props {
-  display?: 'vertical' | 'horizontal';
-  className?: string;
-}
-
-export const StyledDateRange = styled(DateRange)(({ display }: Props) => [
-  display === 'vertical' && [
-    tw`
-  
-    `,
-  ],
-
-  display === 'horizontal' && [
-    tw`
+export const StyledDateRange = styled(DateRange)`
+  ${tw`absolute 
+      left-[520px] 
       md:top-[110px] md:left-[125px]
-    `,
-  ],
+  `}
 
-  css`
-    position: absolute;
+  ${css`
     border: 1px solid #e0e0e0;
     border-radius: var(--border-radius);
 
@@ -157,5 +144,5 @@ export const StyledDateRange = styled(DateRange)(({ display }: Props) => [
         right: 3px;
       }
     }
-  `,
-]);
+  `}
+`;

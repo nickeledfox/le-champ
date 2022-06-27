@@ -1,20 +1,31 @@
 import tw, { styled } from 'twin.macro';
-import { Bg1, LT_BG } from '../../../constants/images';
-import { SearchBar } from '../../layouts';
+
+import { Bg1, LT_BG } from '../constants/images';
+import { deviceSize } from '../constants/breakpoints';
+import { useMediaQuery } from 'react-responsive';
+
+import { SearchBar } from '../components/layouts';
 
 export const Spa = () => {
+  const isLaptop = useMediaQuery({ minWidth: deviceSize.laptop });
+
   return (
-    <div>
+    <section>
       <Backgrounds>
         <img src={Bg1} className='main-background' alt='' />
         <img src={LT_BG} className='left-top-background' alt='' />
       </Backgrounds>
-      <SearchBar variant='horizontal' />
-    </div>
+
+      {isLaptop ? (
+        <SearchBar variant='horizontal' />
+      ) : (
+        <SearchBar variant='vertical' />
+      )}
+    </section>
   );
 };
 
-const Backgrounds = styled.section`
+const Backgrounds = styled.div`
   .main-background {
     max-width: 100%;
     width: 100vw;
@@ -23,7 +34,7 @@ const Backgrounds = styled.section`
         absolute
         top-[290px]
         md:top-[580px]
-        lg:top-[710px]
+        lg:top-[700px]
     `}
   }
 

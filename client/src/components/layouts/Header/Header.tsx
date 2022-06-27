@@ -9,6 +9,7 @@ import Phone from '../../common/Phone';
 import { Button } from '../../common/Button';
 import { Icon, InfoHeader, InfoItem, InfoItems, LogoWrapper } from './style';
 import { Navbar } from '../Navbar/Navbar';
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
   return (
@@ -19,7 +20,9 @@ export const Header = () => {
             <Icon>
               <LocationIcon />
             </Icon>
-            bản nước nóng, tú lệ, <br /> văn chấn, yên bái, việt nam
+            <Link to={'geo:38.62464092991612,-90.18476128578186'}>
+              bản nước nóng, tú lệ, <br /> văn chấn, yên bái, việt nam
+            </Link>
           </InfoItem>
           <InfoItem>
             <Icon>
@@ -27,23 +30,25 @@ export const Header = () => {
             </Icon>
             info@lecham.vn
           </InfoItem>
-          <InfoItem>
+          <InfoItem className='-order-1 lg:order-none'>
             <LogoWrapper to={'/'}>
               <img src={Logo} alt='logo' />
             </LogoWrapper>
           </InfoItem>
           <InfoItem>
             <Icon>
-              <PhoneIcon />
+              <PhoneIcon className='hidden lg:inline-block' />
             </Icon>
-            <Phone />
+            <Phone className='hidden lg:inline-block' />
           </InfoItem>
           <InfoItem>
-            <Button variant='primary' style={{ fontSize: '20px' }}>
+            <Button
+              variant='primary'
+              className='!text-[20px] hidden md:inline-flex'
+            >
               Đặt phòng
             </Button>
           </InfoItem>
-          {/* <InfoItem>Hamburger</InfoItem> */}
         </InfoItems>
       </Container>
       <Navbar />

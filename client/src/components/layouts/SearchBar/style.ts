@@ -23,6 +23,14 @@ export const SearchBarComponent = styled.div(({ variant }: Props) => [
   `,
 
   variant === 'vertical' && [
+    tw`
+      flex flex-col
+      justify-evenly
+      gap-[20px]
+      px-[35px] pt-[27px] pb-[46.5px]
+      max-w-[380px]
+  `,
+
     css`
       .SearchItem :nth-child(2):not(svg) {
         border-radius: var(--border-radius);
@@ -59,17 +67,24 @@ export const SearchBarComponent = styled.div(({ variant }: Props) => [
         padding: 18px;
       }
     `,
-
-    tw`
-        flex flex-col
-        justify-evenly
-        gap-[20px]
-        px-[35px] pt-[27px] pb-[46.5px]
-        max-w-[380px]
-      `,
   ],
 
   variant === 'horizontal' && [
+    tw`
+      font-medium
+      text-[14px]
+      leading-[20px]
+
+      md:mt-[-190px]
+      md:max-w-[950px]
+      md:px-[25px]
+      md:py-[25px]
+    
+      lg:mt-[-6rem]
+      lg:py-[25.5px]
+      lg:px-[35px]
+  `,
+
     css`
       display: grid;
       grid-template-columns: repeat(5, 1fr);
@@ -108,20 +123,6 @@ export const SearchBarComponent = styled.div(({ variant }: Props) => [
           `}
       }
     `,
-    tw`
-        font-medium
-        text-[14px]
-        leading-[20px]
-
-        md:mt-[-190px]
-        md:max-w-[950px]
-        md:px-[25px]
-        md:py-[25px]
-      
-        lg:mt-[-40px]
-        lg:px-[41.5px]
-        lg:py-[25.5px]
-      `,
   ],
 ]);
 

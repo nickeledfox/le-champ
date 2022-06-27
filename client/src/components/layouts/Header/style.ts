@@ -2,10 +2,15 @@ import { Link } from 'react-router-dom';
 import tw, { styled } from 'twin.macro';
 
 export const InfoHeader = styled.header`
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 18px;
-  background-color: #fff;
+  ${tw`
+      font-medium
+      text-[8px] md:text-[14px]
+      leading-[10px] md:leading-[18px]
+      bg-white
+
+      fixed top-0 z-40 w-full
+      md:relative
+  `}
 `;
 
 export const InfoItems = tw.ul`
@@ -13,9 +18,12 @@ export const InfoItems = tw.ul`
   justify-between
   items-center
 `;
-export const InfoItem = tw.li`
-  flex 
-  items-center
+
+export const InfoItem = styled.li`
+  ${tw`
+    flex 
+    items-center
+`}
 `;
 
 export const Icon = styled.div`
@@ -23,6 +31,11 @@ export const Icon = styled.div`
 `;
 
 export const LogoWrapper = styled(Link)`
-  padding-top: 12px;
-  padding-bottom: 6px;
+  ${tw`
+      mt-[6.5px] md:mt-[8px] 
+      mb-[10.36px] md:mb-5
+
+      w-[46.3px] h-[31.38px]
+      md:w-[80px] md:h-[49px]
+  `}
 `;

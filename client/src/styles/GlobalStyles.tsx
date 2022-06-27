@@ -30,7 +30,7 @@ const customStyles = css(defaults, {
 
     color: 'var(--c-font)',
 
-    overflowX: 'hidden',
+    // overflowX: 'hidden',
     scrollBehavior: 'smooth',
   },
 });
@@ -42,10 +42,16 @@ export const GlobalStyles = () => (
   </>
 );
 
+export const Wrapper = tw.div`
+relative
+mx-auto
+max-w-[2000px]
+`;
+
 export const Container = tw.div`
 mx-auto
 px-[16px]
-max-w-[1197px]
+max-w-[1280px]
 `;
 
 export const FlexCenter = tw.div`
