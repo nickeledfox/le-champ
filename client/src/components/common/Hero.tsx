@@ -16,9 +16,5 @@ const HeroWrapper = styled.div<{ background: any }>`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
-  /* ${tw`
-      h-[310px]
-      md:h-[629px]
-  `} */
+  margin-top: -1px;
 `;

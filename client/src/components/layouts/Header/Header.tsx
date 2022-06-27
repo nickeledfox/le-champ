@@ -9,7 +9,6 @@ import Phone from '../../common/Phone';
 import { Button } from '../../common/Button';
 import { Icon, InfoHeader, InfoItem, InfoItems, LogoWrapper } from './style';
 import { Navbar } from '../Navbar/Navbar';
-import { Link } from 'react-router-dom';
 
 export const Header = () => {
   return (
@@ -20,15 +19,19 @@ export const Header = () => {
             <Icon>
               <LocationIcon />
             </Icon>
-            <Link to={'geo:38.62464092991612,-90.18476128578186'}>
-              bản nước nóng, tú lệ, <br /> văn chấn, yên bái, việt nam
-            </Link>
+            <address>
+              <a href='geo:38.62464092991612,-90.18476128578186'>
+                bản nước nóng, tú lệ, <br /> văn chấn, yên bái, việt nam
+              </a>
+            </address>
           </InfoItem>
           <InfoItem>
             <Icon>
               <MailIcon />
             </Icon>
-            info@lecham.vn
+            <address>
+              <a href='mailto:info@lecham.vn'>info@lecham.vn</a>
+            </address>
           </InfoItem>
           <InfoItem className='-order-1 lg:order-none'>
             <LogoWrapper to={'/'}>
