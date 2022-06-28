@@ -34,7 +34,7 @@ const Backgrounds = styled.div`
         absolute
         top-[290px]
         md:top-[580px]
-        lg:top-[700px]
+        lg:top-[80vh]
     `}
   }
 
@@ -48,7 +48,7 @@ const Backgrounds = styled.div`
         absolute
         w-[196.13px] md:w-[300px] lg:w-full lg:h-full
         left-[-7.65px] md:left-0
-        top-[706.04px] lg:top-[600px]
+        top-[706.04px] lg:top-[550px]
     `}
   }
 `;

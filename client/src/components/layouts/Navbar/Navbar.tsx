@@ -1,3 +1,5 @@
+import routes from '../../../routes/routesData';
+
 import { Container } from '../../../styles/GlobalStyles';
 import { burgerStyles, Navigation, NavLink, NavLinks } from './style';
 
@@ -13,6 +15,16 @@ interface NavbarProps {
 export const Navbar: React.FC<NavbarProps> = (props) => {
   const isTablet = useMediaQuery({ maxWidth: deviceSize.tablet });
 
+  const navItems = (
+    <NavLinks>
+      {routes.map((route, index) => (
+        <NavLink to={route.path} key={`${route.name} ${index}`}>
+          {route.name}
+        </NavLink>
+      ))}
+    </NavLinks>
+  );
+
   return (
     <Navigation>
       {isTablet ? (
@@ -22,24 +34,10 @@ export const Navbar: React.FC<NavbarProps> = (props) => {
           pageWrapId={'page-wrap'}
           outerContainerId={'outer-container'}
         >
-          <NavLink to={''}>Link</NavLink>
-          <NavLink to={''}>Link</NavLink>
-          <NavLink to={''}>Link</NavLink>
-          <NavLink to={''}>Link</NavLink>
-          <NavLink to={''}>Link</NavLink>
-          <NavLink to={''}>Link</NavLink>
+          {navItems}
         </BurgerMenu>
       ) : (
-        <Container>
-          <NavLinks>
-            <NavLink to={''}>Link</NavLink>
-            <NavLink to={''}>Link</NavLink>
-            <NavLink to={''}>Link</NavLink>
-            <NavLink to={''}>Link</NavLink>
-            <NavLink to={''}>Link</NavLink>
-            <NavLink to={''}>Link</NavLink>
-          </NavLinks>
-        </Container>
+        <Container className='!px-[40px]'>{navItems}</Container>
       )}
     </Navigation>
   );

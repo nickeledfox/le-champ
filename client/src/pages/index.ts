@@ -3,4 +3,8 @@ export { Contact } from './Contact';
 export { Rooms } from './Rooms';
 export { Room } from './Room';
 export { Story } from './Story';
+export { Dining } from './Dining';
+export { HotSprings } from './HotSprings';
+export { Gallery } from './Gallery';
+export { TouristDestination } from './TouristDestination';
 export { NotFound } from './404';

@@ -13,15 +13,16 @@ import { Navbar } from '../Navbar/Navbar';
 export const Header = () => {
   return (
     <InfoHeader>
-      <Container>
+      <Container className='!px-[40px]'>
         <InfoItems>
           <InfoItem className='capitalize'>
             <Icon>
               <LocationIcon />
             </Icon>
-            <address>
+            <address className='max-w-[190px]'>
               <a href='geo:38.62464092991612,-90.18476128578186'>
-                bản nước nóng, tú lệ, <br /> văn chấn, yên bái, việt nam
+                Nuoc Nong Community, Tu Le Village, Van Chan Town, Yen Bai
+                Province
               </a>
             </address>
           </InfoItem>
@@ -49,7 +50,7 @@ export const Header = () => {
               variant='primary'
               className='!text-[20px] hidden md:inline-flex'
             >
-              Đặt phòng
+              Book now
             </Button>
           </InfoItem>
         </InfoItems>
