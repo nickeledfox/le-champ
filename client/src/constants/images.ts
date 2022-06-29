@@ -22,7 +22,7 @@ import Messenger from '../assets/images/common/messenger.png';
 // Background
 import BackgroundImage from '../assets/images/background/background.svg';
 import Bg1 from '../assets/images/background/bg-no-color 1.png';
-import LT_BG from '../assets/images/background/group.png';
+import PeachBlossom from '../assets/images/background/group.png';
 
 export {
   MailIcon,
@@ -42,5 +42,5 @@ export {
   Messenger,
   BackgroundImage,
   Bg1,
-  LT_BG,
+  PeachBlossom,
 };

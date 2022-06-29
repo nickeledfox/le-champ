@@ -27,7 +27,7 @@ export const SearchBar: React.FC<Props> = ({ variant }) => {
   const navigate = useNavigate();
 
   const handleSearch = () => {
-    navigate('/searchresults', { state: { date } });
+    navigate('/rooms', { state: { date } });
   };
 
   return (
@@ -48,7 +48,7 @@ export const SearchBar: React.FC<Props> = ({ variant }) => {
 
       <SearchBarComponent variant={variant}>
         <div className='SearchItem'>
-          <OptionName>Ngày đến:</OptionName>
+          <OptionName>Check-in*</OptionName>
           <div>
             <span
               className='cursor-pointer'
@@ -61,7 +61,7 @@ export const SearchBar: React.FC<Props> = ({ variant }) => {
         </div>
 
         <div className='SearchItem'>
-          <OptionName>Ngày về:</OptionName>
+          <OptionName>Check-out*</OptionName>
           <div>
             <span
               className='cursor-pointer'
@@ -74,7 +74,7 @@ export const SearchBar: React.FC<Props> = ({ variant }) => {
         </div>
 
         <div className='SearchItem'>
-          <OptionName>Người lớn:</OptionName>
+          <OptionName>Adults</OptionName>
           <div>
             <span>
               03
@@ -87,7 +87,7 @@ export const SearchBar: React.FC<Props> = ({ variant }) => {
         </div>
 
         <div className='SearchItem'>
-          <OptionName>Trẻ em dưới 5 tuổi:</OptionName>
+          <OptionName>Children</OptionName>
           <div>
             <span>
               01
@@ -100,7 +100,7 @@ export const SearchBar: React.FC<Props> = ({ variant }) => {
         </div>
         <div className='ButtonWrapper'>
           <Button variant='white' onClick={handleSearch}>
-            Tìm phòng
+            Search
           </Button>
         </div>
       </SearchBarComponent>
