@@ -10,7 +10,7 @@ relative
 `;
 
 export const Text = tw.span`
-text-white
+text-[rgb(248, 248, 248)]
 text-2xl
 ml-32
 

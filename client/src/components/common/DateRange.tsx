@@ -8,7 +8,8 @@ import tw, { styled, css } from 'twin.macro';
 export const StyledDateRange = styled(DateRange)`
   ${tw`absolute 
       left-[520px] 
-      md:top-[110px] md:left-[125px]
+      md:top-[110px] lg:left-[50px]
+      2xl:left-[165px]
   `}
 
   ${css`

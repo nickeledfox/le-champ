@@ -88,13 +88,15 @@ export const SearchBarComponent = styled.div(({ variant }: Props) => [
     css`
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      grid-template-columns: 1.2fr 1.2fr 1fr 1fr 1.5fr;
-      grid-gap: 30px;
+      grid-template-columns: 1.3fr 1.3fr 1fr 1fr 1.5fr;
+      grid-gap: 40px;
 
       .SearchItem {
         border-bottom: 1px solid #fff;
         ${tw`
-              flex flex-col justify-between
+              flex 
+              flex-col 
+              justify-between
           `}
       }
 
@@ -112,15 +114,23 @@ export const SearchBarComponent = styled.div(({ variant }: Props) => [
 
       span {
         ${tw`
-              flex justify-between items-center
+              flex 
+              justify-between 
+              items-center
               pb-[5px]
           `}
       }
 
+      button {
+        width: 90%;
+      }
+
       .ButtonWrapper {
         ${tw`
-              flex items-center justify-end
-          `}
+              flex 
+              items-center 
+              justify-end
+        `}
       }
     `,
   ],

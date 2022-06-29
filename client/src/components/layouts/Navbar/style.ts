@@ -15,10 +15,29 @@ export const NavLinks = tw.div`
   lg:px-20
 `;
 
-export const NavLink = tw(Link)`
-  py-6
-  text-white
-  font-bold
+export const NavLink = styled(Link)`
+  ${tw`
+      py-6 md:py-[23px]
+      text-white
+      font-bold
+      relative
+`}
+  ::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3.06px;
+    bottom: 1px;
+    left: 0;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+  :hover::before {
+    transform: scaleX(1);
+  }
 `;
 
 // react-burger-menu styles
@@ -32,7 +51,7 @@ export const burgerStyles = {
   },
   bmBurgerBars: {
     background: 'var(--brown)',
-    height: '1px',
+    height: '2px',
   },
   bmCrossButton: {
     display: 'none',
@@ -45,8 +64,6 @@ export const burgerStyles = {
     background:
       'linear-gradient(136.07deg, var(--accent) 0%, var(--blue) 99.35%)',
     padding: '40px 1.5em 0',
-    fontSize: '14px',
-    lineHeight: '25px',
   },
   bmItemList: {
     color: '#fff',

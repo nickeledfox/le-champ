@@ -1,18 +1,15 @@
-import tw, { styled } from 'twin.macro';
+import { styled } from 'twin.macro';
+import { ImageProps } from '../../types/typing';
 
-interface HeroProps {
-  className?: string;
-  background?: any;
-}
-
-export const Hero = ({ background }: HeroProps) => {
-  return <HeroWrapper background={background}></HeroWrapper>;
+export const Hero = ({ src }: ImageProps) => {
+  return <HeroWrapper Imgurl={src}></HeroWrapper>;
 };
 
-const HeroWrapper = styled.div<{ background: any }>`
-  background: url(${(props) => props.background});
+const HeroWrapper = styled.div<{ Imgurl: string | undefined }>`
+  background: url(${(props) => props.Imgurl});
   width: 100%;
-  height: 75vh;
+  height: 70vh;
+  max-height: 628px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

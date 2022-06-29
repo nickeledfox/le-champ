@@ -79,17 +79,21 @@
   @font-face {
     font-family: Diavolo;
     src: url('../assets/fonts/Diavlo/BLACK.woff2') format('woff2');
+    font-weight: 800;
   }
   @font-face {
     font-family: Diavolo;
     src: url('../assets/fonts/Diavlo/BOLD.woff2') format('woff2');
+    font-weight: 700;
   }
   @font-face {
     font-family: Diavolo;
     src: url('../assets/fonts/Diavlo/BOOK.woff2') format('woff2');
+    font-weight: 400;
   }
   @font-face {
     font-family: Diavolo;
     src: url('../assets/fonts/Diavlo/LIGHT.woff2') format('woff2');
+    font-weight: 300;
   }
 }
