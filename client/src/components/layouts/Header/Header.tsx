@@ -13,13 +13,13 @@ import { Navbar } from '../Navbar/Navbar';
 export const Header = () => {
   return (
     <InfoHeader>
-      <Container className='!px-[40px]'>
+      <Container className='!md:px-[40px]'>
         <InfoItems>
           <InfoItem className='capitalize'>
             <Icon>
               <LocationIcon />
             </Icon>
-            <address className='max-w-[190px]'>
+            <address className='max-w-[120px] sm:max-w-[190px]'>
               <a href='geo:38.62464092991612,-90.18476128578186'>
                 Nuoc Nong Community, Tu Le Village, Van Chan Town, Yen Bai
                 Province

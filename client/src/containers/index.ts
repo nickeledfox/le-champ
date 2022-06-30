@@ -1,1 +1,1 @@
-export { Spa } from './Spa';
+export { RoomList } from './RoomList';

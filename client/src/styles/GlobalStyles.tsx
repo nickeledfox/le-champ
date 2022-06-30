@@ -2,8 +2,6 @@ import { Global, css } from '@emotion/react';
 import tw, { theme, GlobalStyles as BaseStyles } from 'twin.macro';
 import './index.css';
 
-
-
 const defaults = css`
   * {
     outline: 0;
@@ -29,7 +27,7 @@ const customStyles = css(defaults, {
     fontSize: '2rem',
     fontWeight: 400,
     ...tw`antialiased`,
-    backgroundColor: 'var(--bg-3)',
+    // backgroundColor: 'var(--bg-3)',
     color: 'var(--c-font)',
     overflowX: 'hidden',
     scrollBehavior: 'smooth',

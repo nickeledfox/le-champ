@@ -8,8 +8,8 @@ export const Hero = ({ src }: ImageProps) => {
 const HeroWrapper = styled.div<{ Imgurl: string | undefined }>`
   background: url(${(props) => props.Imgurl});
   width: 100%;
-  height: 70vh;
-  max-height: 628px;
+  height: 75vh;
+  max-height: 635px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
