@@ -1,32 +1,21 @@
 import { Link } from 'react-router-dom';
 import tw, { styled } from 'twin.macro';
-import { BackgroundImage } from '../../../constants/images';
+import { FooterBg } from '../../../constants/images';
 import { H } from '../../common/Heading';
 
 export const FooterWrapper = styled.footer`
-  margin-top: 100vh;
-
-  background: url(${BackgroundImage});
+  margin-top: 15rem;
+  padding-top: 15rem;
+  background: url(${FooterBg});
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 
-  :before {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: rgba(63, 41, 17, 0.9);
-  }
-
   font-size: 1.4rem;
   line-height: 3.5rem;
 
   ${tw`
-    w-full
     h-auto
     text-white
     font-medium
@@ -43,10 +32,11 @@ export const Col = tw.div`
 `;
 
 export const FooterContainer = tw.div`
-     pt-9 
+     mt-14 
      lg:flex 
      lg:flex-row
      lg:justify-between
+     max-w-[100%]
      lg:w-[1100px]
      mx-auto
 `;

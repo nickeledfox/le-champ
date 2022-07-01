@@ -2,6 +2,10 @@ import { Link } from 'react-router-dom';
 import tw, { styled } from 'twin.macro';
 
 export const InfoHeader = styled.header`
+  -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+
   ${tw`
       font-medium
       text-[8px] md:text-[14px]
@@ -10,6 +14,7 @@ export const InfoHeader = styled.header`
 
       fixed top-0 z-40 w-full
       md:relative
+      md:shadow-none
   `}
 `;
 

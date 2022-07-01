@@ -17,11 +17,12 @@ export const NavLinks = tw.div`
 
 export const NavLink = styled(Link)`
   ${tw`
-      py-6 md:py-[23px]
+      py-5 md:py-[23px]
       text-white
-      font-bold
+      md:font-bold
       relative
 `}
+
   ::before {
     content: '';
     position: absolute;
@@ -46,7 +47,7 @@ export const burgerStyles = {
     position: 'fixed',
     width: '25px',
     height: '20px',
-    right: '28px',
+    right: '20px',
     top: '15px',
   },
   bmBurgerBars: {
@@ -63,17 +64,16 @@ export const burgerStyles = {
   bmMenu: {
     background:
       'linear-gradient(136.07deg, var(--accent) 0%, var(--blue) 99.35%)',
-    padding: '40px 1.5em 0',
+    padding: '40px .7em 0',
   },
   bmItemList: {
     color: '#fff',
     padding: '0.8em',
+  },
+  bmItem: {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'flex-end',
-  },
-  bmItem: {
-    display: 'inline-block',
   },
   bmOverlay: {
     background: 'rgba(0, 0, 0, 0.8)',

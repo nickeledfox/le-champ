@@ -1,3 +1,4 @@
+import React from 'react';
 import tw, { styled, css } from 'twin.macro';
 
 export const BaseTitle = tw.span`
@@ -8,21 +9,21 @@ export const BaseTitle = tw.span`
 
 export const Subtitle = tw(BaseTitle)`
   my-[10px]
-  tracking-[.2em]
-  text-[16px]
-  leading-[20px]
+  tracking-[2.8px]
+  text-[14px] sm:text-[16px]
+  leading-[18px] sm:leading-[20px]
 `;
 
 interface HeadingStyleProps extends React.HTMLAttributes<HTMLHeadingElement> {
   level?: 1 | 2 | 3 | 4 | 5 | 6;
   color?: 'primary' | 'secondary' | 'accent' | undefined;
   spanColor?: 'primary' | 'secondary' | undefined;
-}
-
-interface HeadingProps extends HeadingStyleProps {
   as?: any;
+  center?: boolean;
   span?: string;
 }
+
+interface HeadingProps extends HeadingStyleProps {}
 
 export const Title: React.FC<HeadingProps> = ({
   children,
@@ -40,13 +41,14 @@ export const Title: React.FC<HeadingProps> = ({
 };
 
 export const H = styled(BaseTitle)(
-  ({ level, color, spanColor }: HeadingStyleProps) => [
+  ({ level, color, spanColor, center }: HeadingStyleProps) => [
     css`
       font-family: 'Diavolo';
       font-weight: 700;
     `,
 
-    color === 'primary' && tw`text-black`,
+    center === true && tw`text-center`,
+
     color === 'secondary' && tw`text-brown`,
     color === 'accent' && tw`text-accent`,
 
@@ -62,11 +64,11 @@ export const H = styled(BaseTitle)(
     ],
 
     level === 2 && [
-      `
-    font-size: 50px;
-    line-height: 65px;
-    text-transform: capitalize;
-  `,
+      tw`
+        text-[36px] md:text-[50px]
+        leading-[46.8px] md:leading-[65px]
+        capitalize
+    `,
     ],
 
     level === 3 && [
@@ -78,9 +80,8 @@ export const H = styled(BaseTitle)(
 
     level === 4 && [
       `
-    font-size: 25px;
-    line-height: 25px;
-    color: inherit;
+    font-size: 36px;
+    line-height: 36px;
 
   `,
     ],

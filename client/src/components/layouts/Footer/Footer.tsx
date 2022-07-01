@@ -14,7 +14,7 @@ export const Footer = () => {
   return (
     <FooterWrapper>
       <FlexCenter>
-        <img src={LogoWhite} alt='' className='z-10' />
+        <img src={LogoWhite} alt='' className='z-10 h-[190px] w-[302px]' />
       </FlexCenter>
       <FooterContainer>
         <Col>

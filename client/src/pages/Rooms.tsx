@@ -1,5 +1,5 @@
 import { Hero } from '../components/common/Hero';
-import { Intro, SearchBar } from '../components/layouts';
+import { Intro } from '../components/layouts';
 import { BackgroundImage } from '../constants/images';
 
 export const Rooms = () => {

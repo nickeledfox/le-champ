@@ -3,9 +3,9 @@ import tw, { styled } from 'twin.macro';
 export const BgWrapper = tw.figure`
 [> img]:(
   absolute
-  top-[290px]
+  top-[290px] left-0 right-0
   md:top-[580px]
-  lg:top-[80vh]
+  lg:top-[85vh]
 )
 `;
 
@@ -19,23 +19,34 @@ export const PeachBlossomWrapper = styled.figure`
         absolute
         w-[196.13px] md:w-[300px] lg:w-full lg:h-full
         left-[-7.65px] md:left-0
-        top-[706.04px] lg:top-[550px]
+        top-[21rem] sm:top-[25rem] md:top-[55rem] lg:top-[450px] xl:top-[550px]
     `}
 `;
 
+export const PetalsImgWrapper = tw.figure`
+  hidden lg:inline-block
+
+  absolute 
+  left-0
+  top-[90rem]
+`;
+
 export const Content = tw.div`
- relative
- pt-[12rem]
+ mt-[-15rem] md:mt-12
+ lg:mt-[10rem]
+ px-[10px] sm:px-[20px]
  z-10 
+ relative
  text-center 
  flex flex-col justify-center items-center
 `;
 
 export const Details = tw.p`
- my-[25px]
- text-[20px]
- leading-[30px]
- w-[560px]
- max-w-[740px]
+ mt-5 sm:mt-[25px] 
+ mb-[36px]
+ text-[14px] sm:text-[20px]
+ leading-8 sm:leading-[30px]
  tracking-wider
+ md:w-[560px]
+ max-w-[740px]
 `;

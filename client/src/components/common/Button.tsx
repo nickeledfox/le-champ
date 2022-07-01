@@ -2,9 +2,10 @@ import tw, { styled, css } from 'twin.macro';
 
 interface ButtonProps {
   variant?: 'primary' | 'white' | 'disabled';
+  size?: 'small';
 }
 
-export const Button = styled.button(({ variant }: ButtonProps) => [
+export const Button = styled.button(({ variant, size }: ButtonProps) => [
   tw`
     font-medium py-[11px] px-[32px] transition active:opacity-[.75]
   `,
@@ -54,5 +55,14 @@ export const Button = styled.button(({ variant }: ButtonProps) => [
       bg-white 
       border-white
       cursor-not-allowed`,
+  ],
+
+  size === 'small' && [
+    tw`
+      py-[12px]
+      px-[30px]
+      font-normal
+      text-[14px]
+    `,
   ],
 ]);

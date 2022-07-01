@@ -10,6 +10,7 @@ export const StyledDateRange = styled(DateRange)`
       left-[520px] 
       md:top-[110px] lg:left-[50px]
       2xl:left-[165px]
+      z-50
   `}
 
   ${css`

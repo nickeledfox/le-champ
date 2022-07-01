@@ -1,6 +1,6 @@
 // Logos
 import Logo from '../assets/images/logos/logo.png';
-import LogoWhite from '../assets/images/logos/logo-white.png';
+import LogoWhite from '../assets/images/logos/lecham-logo.png';
 import AerisHill from '../assets/images/logos/logo1.png';
 import CopyrightImg from '../assets/images/logos/logo2.png';
 
@@ -20,9 +20,17 @@ import Img4 from '../assets/images/common/img4.png';
 import Messenger from '../assets/images/common/messenger.png';
 
 // Background
-import BackgroundImage from '../assets/images/background/background.svg';
 import Bg1 from '../assets/images/background/bg-no-color 1.png';
 import PeachBlossom from '../assets/images/background/group.png';
+import FooterBg from '../assets/images/background/footer-bg.png';
+import Particle from '../assets/images/background/slice.png';
+import Petals from '../assets/images/background/bg.png';
+
+// Banners
+import BackgroundImage from '../assets/images/banners/background.jpeg';
+import DiningBg from '../assets/images/banners/dining.jpeg';
+import HotSpringsBg from '../assets/images/banners/hot-springs.jpeg';
+import GalleryBg from '../assets/images/banners/gallery.jpeg';
 
 export {
   MailIcon,
@@ -43,4 +51,10 @@ export {
   BackgroundImage,
   Bg1,
   PeachBlossom,
+  DiningBg,
+  HotSpringsBg,
+  GalleryBg,
+  FooterBg,
+  Particle,
+  Petals,
 };
