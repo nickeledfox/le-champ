@@ -22,6 +22,10 @@ export const Navbar: React.FC<NavbarProps> = (props) => {
           {route.name}
         </NavLink>
       ))}
+      <select name='' id='' className='bg-transparent text-white'>
+        <option value='en'>En</option>
+        <option value='vn'>Vn</option>
+      </select>
     </NavLinks>
   );
 
