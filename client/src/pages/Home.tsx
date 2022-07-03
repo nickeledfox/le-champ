@@ -6,8 +6,10 @@ import { Intro } from '../components/layouts';
 import { SearchBar } from '../components/layouts';
 import { deviceSize } from '../constants/breakpoints';
 import { useMediaQuery } from 'react-responsive';
+import { useTranslation } from 'react-i18next';
 
 export const Home = () => {
+  const { t } = useTranslation(['pages']);
   const isLaptop = useMediaQuery({ minWidth: deviceSize.laptop });
   return (
     <>
@@ -21,9 +23,9 @@ export const Home = () => {
       )}
       <MainWrapper>
         <Intro
-          subtitle='Le Champ Tu Le Resort Hot Spring & Spa'
           image={LeChamp}
-          details='Le Champ Tu Le Resort Hot Spring & Spa is located on a gentle hill with the system of 96 rooms with bold local cultural identity, exquisite sophistication and standardized interiors, bringing guests the ultimate experience of residing in a classy resort right in the middle of the Northwest mountains.'
+          subtitle={t('home.intro.subtitle')}
+          details={t('home.intro.description')}
         />
       </MainWrapper>
     </>

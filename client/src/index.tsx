@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
-import './i18n/i18n'
+import './config/i18n'
 
 import { GlobalStyles } from './styles/GlobalStyles';
 
@@ -12,9 +12,11 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
+    <Suspense fallback={<div>Loading...</div>}>
     <BrowserRouter>
       <GlobalStyles />
       <App />
     </BrowserRouter>
+    </Suspense>
   </React.StrictMode>
 );

@@ -6,5 +6,5 @@ export { Story } from './Story';
 export { Dining } from './Dining';
 export { HotSprings } from './HotSprings';
 export { Gallery } from './Gallery';
-export { TouristDestination } from './TouristDestination';
+export { Attractions } from './Attractions';
 export { NotFound } from './404';

@@ -10,7 +10,7 @@ import {
   Dining,
   HotSprings,
   Gallery,
-  TouristDestination,
+  Attractions,
 } from '../pages';
 
 const RoutesList = () => {
@@ -21,7 +21,7 @@ const RoutesList = () => {
       <Route path='/dining' element={<Dining />} />
       <Route path='/hot-springs' element={<HotSprings />} />
       <Route path='/gallery' element={<Gallery />} />
-      <Route path='/tourist-destination' element={<TouristDestination />} />
+      <Route path='/attractions' element={<Attractions />} />
       <Route path='/contact-us' element={<Contact />} />
       <Route path='/rooms' element={<Rooms />} />
       <Route path='/rooms/:id' element={<Room />} />
