@@ -30,8 +30,8 @@ const mainRoutes: Route[] = [
     name: 'Gallery',
   },
   {
-    path: 'tourist-destination',
-    name: 'Tourist Destination',
+    path: 'attractions',
+    name: 'Attractions',
   },
   {
     path: 'contact-us',
